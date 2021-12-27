@@ -53,6 +53,11 @@ html {
 
 .logo_img {
     margin-right: 30px;
+    transition: all .3s;
+}
+
+.logo_img:hover {
+    transform: scale(1.2);
 }
 
 .logo_text {
@@ -159,6 +164,12 @@ html {
     letter-spacing: 0.1em;
     text-transform: uppercase;  
     color: #222222;
+    transition: all .3s;
+}
+
+.nav_item:hover {
+    color: #005FA3;
+    filter: drop-shadow(0 0 10px #005FA3);
 }
 
 /* section_promo */
@@ -306,3 +317,153 @@ html {
     color: #FFFFFF;    
 }
 
+/* section_abutus */
+
+.section_abutus {
+    padding: 140px 0;
+    background: white;
+}
+
+.section_title-alt {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 69px;  
+    color: #005FA3;
+}
+
+
+
+.abutus {
+    display: flex;
+}
+
+.section_desc {
+    max-width: 445px;
+    width: 100%;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.abutus_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.abutus_card {
+    padding: 30px 108px 40px 40px;
+    background: #EBEBEB;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.selected_abutus .trade_number,
+.selected_abutus .trade_text, 
+.selected_abutus .case_link {
+    color: white;
+}
+
+.selected_abutus {
+    background: #005FA3;
+}
+
+.abutus_card {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.abutus_card:nth-child(2n) {
+    margin-right: 0;
+}
+
+.trade_number {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 66px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.trade_text {
+    max-width: 107px;;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    margin-top: 30px;
+    margin-bottom: 47px;
+}
+
+.case_link {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    color: #005FA3;
+}
+
+/* section_clients */
+
+.section_clients {
+    padding: 100px 0;
+    background: #EBEBEB;
+}
+
+.section_clients .section_title {
+    margin-bottom: 80px;
+}
+
+.companies_container {
+    position: relative;
+}
+
+.companies_imgs {
+    margin-bottom: 100px;
+}
+
+.alt {
+    background: #005FA3;
+    opacity: 0.4;
+}
+
+.selected_alt {
+    background: #005FA3;
+    opacity: 1;
+}
+
+.alt_arrow:first-child {
+    padding: 30px;
+    background: rgba(0, 95, 163, 0.2) url(../img/arrowL.png) no-repeat center;
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.alt_arrow:last-child {
+    padding: 30px;
+    background: rgba(0, 95, 163, 0.2) url(../img/arrowR.png) no-repeat center;
+    border: none;
+    cursor: pointer;
+    transition: all .3s; 
+}
+
+.alt_arrow:first-child:hover {
+    background: #005FA3 url(../img/arrowL.png) no-repeat center;
+}
+
+.alt_arrow:last-child:hover {
+    background: #005FA3 url(../img/arrowR.png) no-repeat center;
+}
