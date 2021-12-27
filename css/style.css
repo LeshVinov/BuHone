@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Merriweather', serif */
+    background: #EBEBEB;
+}
+
+.container {
+    max-width: 1115px;
+    width: 100%;
+    margin: auto;
+}
+
+.block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_container {
+    display: flex;
+    align-items: center;
+}
+
+.section_header {
+    padding-top: 22px;
+    padding-bottom: 31px;
+}
+
+.logo_img {
+    margin-right: 30px;
+}
+
+.logo_text {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 50px;
+    color: #005FA3;
+}
+
+.header-main_container {
+    max-width: 671px;
+    width: 100%;
+}
+
+.header_contacts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.contact_container {
+    max-width: 165px;
+    width: 100%;
+    margin-right: 40px;
+}
+
+.contact_img {
+    margin-right: 15px;
+}
+
+.header-contact_item {
+    position: relative;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 17px;
+    color: #000000;
+    padding-left: 38px;
+}
+
+.header-contact_item:first-child {
+    padding-left: 25px;
+}
+
+.contact_container {
+    display: flex;
+}
+
+.phone_img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/phone.png) no-repeat center;
+    width: 10px;
+    height: 18px;
+}
+
+.cock_img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/cock.png) no-repeat center;
+    width: 20px;
+    height: 18px;
+}
+
+.mail_img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/mail.png) no-repeat center;
+    width: 23px;
+    height: 18px; 
+}
+
+.addres_img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/map.png) no-repeat center;
+    width: 23px;
+    height: 18px;   
+}
+
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_item {
+    text-decoration: none;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;  
+    color: #222222;
+}
+
+/* section_promo */
